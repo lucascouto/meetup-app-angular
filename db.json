@@ -1,0 +1,18 @@
+{
+  "meetups": [
+    {
+      "id": 1,
+      "address": "json-server",
+      "description": "typicode",
+      "image": "",
+      "title": ""
+    },
+    {
+      "id": 1,
+      "address": "json-server",
+      "description": "typicode",
+      "image": "",
+      "title": ""
+    }
+  ]
+}
