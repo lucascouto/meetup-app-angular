@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MeetupItemComponent } from '../meetup-item/meetup-item.component';
+import { MeetupService } from 'src/app/services/meetup.service';
 
 @Component({
   selector: 'app-meetup-list',
@@ -9,4 +10,7 @@ import { MeetupItemComponent } from '../meetup-item/meetup-item.component';
   styleUrls: ['./meetup-list.component.scss'],
   imports: [CommonModule, MeetupItemComponent],
 })
-export class MeetupListComponent {}
+export class MeetupListComponent {
+  meetupService = inject(MeetupService);
+  meetups$ = this.meetupService.getMeetups();
+}

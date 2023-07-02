@@ -2,16 +2,16 @@
   "meetups": [
     {
       "id": 1,
-      "address": "json-server",
-      "description": "typicode",
-      "image": "",
+      "address": "Santiago, Chile",
+      "description": "A very good trip",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbGxpbmd8ZW58MHx8MHx8&w=1000&q=80",
       "title": ""
     },
     {
       "id": 1,
-      "address": "json-server",
-      "description": "typicode",
-      "image": "",
+      "address": "Turquia",
+      "description": "baloons!",
+      "image": "https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg",
       "title": ""
     }
   ]
