@@ -12,4 +12,8 @@ export class MeetupService {
   getMeetups() {
     return this.http.get<Meetup[]>(`${this.apiUrl}/meetups`);
   }
+
+  postMeetup(meetup: Meetup) {
+    return this.http.post(`${this.apiUrl}/meetups`, meetup);
+  }
 }

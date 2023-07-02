@@ -1,1 +1,27 @@
-<p>new-meetup-form works!</p>
+<app-card>
+  <form class="form" [formGroup]="meetupForm" (submit)="submitHandler()">
+    <div class="control">
+      <label for="title">Meetup Title</label>
+      <input type="text" id="title" formControlName="title" />
+    </div>
+    <div class="control">
+      <label for="image">Meetup Image</label>
+      <input type="url" id="image" formControlName="image" />
+    </div>
+    <div class="control">
+      <label for="title">Address</label>
+      <input type="text" id="title" formControlName="address" />
+    </div>
+    <div class="control">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        rows="5"
+        formControlName="description"
+      ></textarea>
+    </div>
+    <div class="actions">
+      <button>Add Meetup</button>
+    </div>
+  </form>
+</app-card>
