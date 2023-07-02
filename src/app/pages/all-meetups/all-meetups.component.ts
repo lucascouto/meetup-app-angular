@@ -12,10 +12,11 @@ import { MeetupListComponent } from '../../meetups/meetup-list/meetup-list.compo
 })
 export class AllMeetupsComponent implements OnInit {
   meetupService = inject(MeetupService);
+  isLoading = true;
 
   ngOnInit(): void {
-    this.meetupService
-      .getMeetups()
-      .subscribe((meetups) => console.log(meetups));
+    this.meetupService.getMeetups().subscribe(() => {
+      this.isLoading = false;
+    });
   }
 }

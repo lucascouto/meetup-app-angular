@@ -1,4 +1,8 @@
 <section>
   <h1>All Meetups</h1>
-  <app-meetup-list />
+  <p *ngIf="isLoading; else allMeetups">Loading...</p>
+
+  <ng-template #allMeetups>
+    <app-meetup-list />
+  </ng-template>
 </section>
