@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Meetup } from '../interfaces/MeetupResponse';
+import { Meetup } from '../interfaces/Meetup';
 
 @Injectable({
   providedIn: 'root',
