@@ -1,1 +1,9 @@
-<p>favorites works!</p>
+<section>
+  <h1>My Favorites</h1>
+  <p *ngIf="meetupService.totalFavorites === 0; else favorites">
+    You've got no favorites yet. Start adding some?
+  </p>
+  <ng-template #favorites>
+    <app-meetup-list [meetups]="meetupService.favorites()" />
+  </ng-template>
+</section>

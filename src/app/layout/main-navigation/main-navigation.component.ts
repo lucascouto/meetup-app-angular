@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { MeetupService } from 'src/app/services/meetup.service';
 
 @Component({
   selector: 'app-main-navigation',
@@ -9,4 +10,6 @@ import { RouterLink } from '@angular/router';
   templateUrl: './main-navigation.component.html',
   styleUrls: ['./main-navigation.component.scss'],
 })
-export class MainNavigationComponent {}
+export class MainNavigationComponent {
+  meetupService = inject(MeetupService);
+}

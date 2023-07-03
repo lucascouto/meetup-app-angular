@@ -9,7 +9,9 @@
       <p>{{ meetup.description }}</p>
     </div>
     <div class="actions">
-      <button>Add to favorites</button>
+      <button (click)="toggleFavorite(meetup)">
+        {{ isMeetupFavorite() ? "Remove from favorites" : "Add to favorites" }}
+      </button>
     </div>
   </app-card>
 </li>

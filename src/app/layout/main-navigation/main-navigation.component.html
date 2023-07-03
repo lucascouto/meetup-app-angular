@@ -4,7 +4,12 @@
     <ul>
       <li><a routerLink="/">All Meetups</a></li>
       <li><a routerLink="/new-meetup">New Meetup</a></li>
-      <li><a routerLink="/favorites">My Favorites</a></li>
+      <li>
+        <a routerLink="/favorites">
+          My Favorites
+          <label class="badge">{{ meetupService.totalFavorites }}</label>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
