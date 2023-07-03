@@ -1,7 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MeetupItemComponent } from '../meetup-item/meetup-item.component';
 import { MeetupService } from 'src/app/services/meetup.service';
+import { Meetup } from 'src/app/interfaces/Meetup';
 
 @Component({
   selector: 'app-meetup-list',
@@ -11,6 +12,5 @@ import { MeetupService } from 'src/app/services/meetup.service';
   imports: [CommonModule, MeetupItemComponent],
 })
 export class MeetupListComponent {
-  meetupService = inject(MeetupService);
-  meetups$ = this.meetupService.getMeetups();
+  @Input() meetups: Meetup[] = [];
 }

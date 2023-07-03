@@ -3,6 +3,6 @@
   <p *ngIf="isLoading; else allMeetups">Loading...</p>
 
   <ng-template #allMeetups>
-    <app-meetup-list />
+    <app-meetup-list [meetups]="meetups" />
   </ng-template>
 </section>
