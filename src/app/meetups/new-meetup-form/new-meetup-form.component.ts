@@ -30,7 +30,7 @@ export class NewMeetupFormComponent {
       return;
     }
 
-    const meetup = { id: Math.random(), ...this.meetupForm.value } as Meetup;
+    const meetup = this.meetupForm.value as Meetup;
 
     this.meetupService.postMeetup(meetup).subscribe(() => {
       this.router.navigate(['/']);
